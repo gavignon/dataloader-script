@@ -1,0 +1,14 @@
+# Exclude everything inside conf folder except mandatory configuration
+/conf/*
+!/conf/log-conf.xml
+!/conf/process-conf.xml
+
+# Exclude everything inside processes folder except default example
+/processes/*
+!/processes/default.json
+
+# Exclude all other generated files
+/logs/*
+/input/*
+/output/*
+/mapping/*

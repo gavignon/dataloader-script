@@ -1,0 +1,24 @@
+{
+    "Name": "Configuration Name",
+    "Username": "username@domain.com",
+    "Password": "passwordToken",
+    "EncryptPassword": false,
+    "Environment": "sandbox",
+    "Timeout": "600",
+    "EmailAlert": true,
+    "EmailContacts": [
+            "email@domain.com"
+    ],
+    
+    "Operations": [
+        {
+            "OperationName": "Process Name",
+            "OperationType": "extract",
+            "Entity": "Account",
+            "DataType": "csvWrite",
+            "SoqlQuery": "SELECT Id, Name FROM Account",
+            "DataName": "\\output\\extractAccount.csv"
+        }
+    ]
+    
+}
